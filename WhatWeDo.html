@@ -22,18 +22,69 @@
           <a href="Members.html">Members</a>
         </li>
         <li>
-          <a href ="index.html">Home</a>
+          <a href="index.html">Home</a>
         </li>
       </ul>
     </nav>
   </header>
 
+  <h1>Possible Activities</h1>
 
-  <h1>Boundary Water Canoe Trip</h1>
+  <h2>Boundary Water Canoe Trip</h2>
   <p>In recent years some students and other members may have seen a lack in the Boundary Water Canoe Trip. One of "The greatest wilderness experiences offered".
     Unfortunatley, the trip has been canceled for all. But, have no fear. If you are interested you should check out ecology club and in the future there could be more trips.</p>
-    <p>An experience unlike any other! Campers will have so many new experiences that allow them to truly be in the moment. For some, not having any technology in sight might not be how they
-      want to spend a whole week in the middle of nowhere. But, There are many things to offer on this trip such as: </p>
+  <p>An experience unlike any other! Campers will have so many new experiences that allow them to truly be in the moment. For some, not having any technology in sight might not be how they
+    want to spend a whole week in the middle of nowhere. But, There are many things to offer on this trip such as: </p>
+
+
+  <div class="w3-content w3-section" style="max-width:500px">
+
+    <img class="mySlides" src="mySlides/ariel view.jpg" style="width:100%">
+    <img class="mySlides" src="mySlides/bear.jpg" style="width:100%">
+    <img class="mySlides" src="mySlides/canoe view.jpg" style="width:100%">
+    <img class="mySlides" src="mySlides/coyote.jpg" style="width:100%">
+    <img class="mySlides" src="mySlides/eddy-falls.jpg" style="width:100%">
+    <img class="mySlides" src="mySlides/lake view.jpg" style="width:100%">
+    <img class="mySlides" src="mySlides/mink.jpg" style="width:100%">
+    <img class="mySlides" src="mySlides/moose.jpg" style="width:100%">
+    <img class="mySlides" src="mySlides/otter.jpg" style="width:100%">
+    <img class="mySlides" src="mySlides/toilet.JPG" style="width:100%">
+    <img class="mySlides" src="mySlides/walking.jpg" style="width:100%">
+    <img class="mySlides" src="mySlides/bobcat.jpg" style="width:100%">
+    <img class="mySlides" src="mySlides/lynx.jpg" style="width:100%">
+  </div>
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2750); // Change image every 2 seconds
+    }
+  </script>
+
+<p>
+  Please avoid-
+  Moose,
+  Bears,
+  Wolfs,
+  Otters,
+  Lynx,
+  and Bobcats if on the trip.
+</p>
+
+
+
+
 
 </body>
 
