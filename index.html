@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link href="base.css" rel="stylesheet" />
-    <link href="layout.css" rel="stylesheet" />
-    <meta charset="utf-8">
-    <title>Ecology Club</title>
-  </head>
-  <body>
-<header>
-  <nav>
-    <ul>
-      <li>
-        <a href="WhatWeDo.html">What We Do</a>
+
+<head>
+  <link href="base.css" rel="stylesheet" />
+  <link href="layout.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <title>Ecology Club</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="WhatWeDo.html">What We Do</a>
         </li>
         <li>
           <a href="Schedule.html">Schedule</a>
-          </li>
-          <li>
-            <a href="Members.html">Members</a>
-          </li>
+        </li>
+        <li>
+          <a href="Members.html">Members</a>
+        </li>
+        <li>
+          <a href ="index.html">Home</a>
+        </li>
       </ul>
     </nav>
   </header>
-  </body>
+  <h1 align = center>Ecology Club</h1>
+  <div class="w3-content w3-section" style="max-width:500px">
+    <img class="mySlides" src="" style="width:100%">
+    <img class="mySlides" src="" style="width:100%">
+    <img class="mySlides" src="" style="width:100%">
+  </div>
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 5000); // Change image every 2 seconds
+  }
+  </script>
+</body>
+
+
 </html>
