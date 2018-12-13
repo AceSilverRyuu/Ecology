@@ -111,6 +111,37 @@
   Technology is not as heavy so students AND teachers can experience something a little different and conncet with nature one on one.</p>
   <p>A great oppotunity, but, it was almost something students and teachers were not able to experience anymore. No need to worry! A great fundraiser (see home for mpre details)
     earned enough money for this amazing outdoor classroom to improve the experience for all!</p>
+
+    <div class="center-images" style="max-width:500px">
+
+      <img class="mySlides" src="mySlides/IMG_1037.jpg" style="width:100%">
+      <img class="mySlides" src="mySlides/IMG_1038.jpg" style="width:100%">
+      <img class="mySlides" src="mySlides/IMG_1039.jpg" style="width:100%">
+      <img class="mySlides" src="mySlides/IMG_1040.jpg" style="width:100%">
+      <img class="mySlides" src="mySlides/IMG_1041.jpg" style="width:100%">
+      <img class="mySlides" src="mySlides/IMG_1042.jpg" style="width:100%">
+
+    </div>
+    
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2750); // Change image every 2 seconds
+      }
+    </script>
+
     <br>
 
 
